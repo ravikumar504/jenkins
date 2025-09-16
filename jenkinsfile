@@ -21,5 +21,15 @@ pipeline {
             }
 
         }
+       stage('uat') {
+            steps {
+                script {
+                    sh """
+                        echo "this is uat"
+                    """
+                }
+            }
+
+        } 
     }
 }
