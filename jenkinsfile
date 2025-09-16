@@ -1,11 +1,11 @@
 pipeline {
-    
+    agent any
     stages {
         stage('build') {
             steps {
-                script {
-                    sh """
-                        echo "this is build"
+                script{
+                   sh """
+                      echo "this is build"
                     """
                 }
             }
@@ -13,9 +13,9 @@ pipeline {
         }
         stage('test') {
             steps {
-                script {
-                    sh """
-                        echo "this is test"
+                script{
+                   sh """
+                      echo "this is build"
                     """
                 }
             }
@@ -23,9 +23,9 @@ pipeline {
         }
        stage('uat') {
             steps {
-                script {
-                    sh """
-                        echo "this is uat"
+                script{
+                   sh """
+                      echo "this is build"
                     """
                 }
             }
